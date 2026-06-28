@@ -1,0 +1,40 @@
+---
+layout: base.njk
+title: Feeling · EN/AK
+description: How EN/AK builds — design, type, interaction and performance.
+---
+
+    <section class="page-hero container">
+      <div class="page-hero__light deco"></div>
+      <span class="eyebrow page-hero__eyebrow" data-reveal="fade" data-en="{{ feeling.hero.eyebrow.en }}" data-de="{{ feeling.hero.eyebrow.de }}">{{ feeling.hero.eyebrow.en }}</span>
+      <h1 class="page-hero__title ink-shine" data-reveal data-en="{{ feeling.hero.title.en }}" data-de="{{ feeling.hero.title.de }}">{{ feeling.hero.title.en }}</h1>
+      <p class="page-hero__lead" data-reveal data-en="{{ feeling.hero.lead.en }}" data-de="{{ feeling.hero.lead.de }}">{{ feeling.hero.lead.en }}</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow" data-en="{{ feeling.stack.eyebrow.en }}" data-de="{{ feeling.stack.eyebrow.de }}">{{ feeling.stack.eyebrow.en }}</span>
+          <h2 class="section-head__title" data-en="{{ feeling.stack.title.en }}" data-de="{{ feeling.stack.title.de }}">{{ feeling.stack.title.en }}</h2>
+        </div>
+        <div class="grid-3" data-reveal-group="90">
+          {%- for c in feeling.stack.cards %}
+          <article class="card" data-reveal><span class="card__num">0{{ loop.index }}</span><h3 class="card__title" data-en="{{ c.title.en }}" data-de="{{ c.title.de }}">{{ c.title.en }}</h3><p class="card__text" data-en="{{ c.text.en }}" data-de="{{ c.text.de }}">{{ c.text.en }}</p></article>
+          {%- endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow" data-en="{{ feeling.principles.eyebrow.en }}" data-de="{{ feeling.principles.eyebrow.de }}">{{ feeling.principles.eyebrow.en }}</span>
+          <h2 class="section-head__title" data-en="{{ feeling.principles.title.en }}" data-de="{{ feeling.principles.title.de }}">{{ feeling.principles.title.en }}</h2>
+        </div>
+        <div class="steps" data-reveal-group="110">
+          {%- for step in feeling.principles.steps %}
+          <div class="step" data-reveal><span class="step__no">{{ step.no }}</span><div><h3 class="step__title" data-en="{{ step.title.en }}" data-de="{{ step.title.de }}">{{ step.title.en }}</h3><p class="step__text" data-en="{{ step.text.en }}" data-de="{{ step.text.de }}">{{ step.text.en }}</p></div></div>
+          {%- endfor %}
+        </div>
+      </div>
+    </section>

@@ -185,6 +185,8 @@
     "tiles": [
       {
         "angle": 1,
+        "slug": "teamboard",
+        "thumb": "/assets/img/showcase/teamboard-thumb.svg",
         "title": "FiveM Server - Teamboard",
         "tag": {
           "en": "Teamboard",
@@ -197,6 +199,8 @@
       },
       {
         "angle": 120,
+        "slug": "bw-trainer",
+        "thumb": "/assets/img/showcase/bw-trainer-thumb.svg",
         "title": "BW-Trainer",
         "tag": {
           "en": "Learning app",
@@ -209,6 +213,8 @@
       },
       {
         "angle": 75,
+        "slug": "noten-lernen",
+        "thumb": "/assets/img/showcase/noten-lernen-thumb.svg",
         "title": "Noten Lernen",
         "tag": {
           "en": "Learning app",

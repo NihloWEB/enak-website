@@ -1,9 +1,8 @@
 # ============================================================
 #  Pages CMS configuration  ·  https://pagescms.org
 #  Edit content at https://app.pagescms.org → sign in with
-#  GitHub → open "NihloWEB/aether-website". Every entry below
-#  maps to a JSON file in src/_data/. Saving commits to GitHub,
-#  which triggers a Vercel build & deploy.
+#  GitHub → open "NihloWEB/aether-website". Saving commits to
+#  GitHub, which triggers a Vercel build & deploy.
 #  Bilingual fields are objects with `en` (English) + `de` (Deutsch).
 # ============================================================
 
@@ -126,11 +125,13 @@ content:
           - { name: eyebrow, label: Eyebrow, type: object, fields: *bi }
           - { name: title, label: Title, type: object, fields: *bi }
           - name: tiles
-            label: Project tiles
+            label: Project tiles (rail)
             type: object
             list: true
             fields:
               - { name: angle, label: Pattern angle, type: number }
+              - { name: slug, label: Slug (matches a Showcase project), type: string }
+              - { name: thumb, label: Thumbnail, type: image }
               - { name: title, label: Project name, type: string }
               - { name: tag, label: Tag, type: object, fields: *bi }
               - { name: meta, label: Meta, type: object, fields: *bi }
@@ -197,7 +198,6 @@ content:
         fields:
           - { name: heading, label: Heading, type: object, fields: *bi }
           - { name: paragraphs, label: Paragraphs, type: object, list: true, fields: *bil }
-          - { name: placeholder, label: Placeholder note, type: object, fields: *bi }
       - name: disciplinesHeading
         label: Disciplines heading
         type: object
@@ -225,11 +225,11 @@ content:
               - { name: de, label: Deutsch, type: string }
               - { name: url, label: URL, type: string }
 
-  # ---------------------------------------------------------- TECH
-  - name: tech
-    label: "Page · Tech"
+  # ---------------------------------------------------------- FEELING (was Tech)
+  - name: feeling
+    label: "Page · Feeling"
     type: file
-    path: src/_data/tech.json
+    path: src/_data/feeling.json
     format: json
     fields:
       - name: hero
@@ -266,7 +266,6 @@ content:
               - { name: no, label: Number, type: string }
               - { name: title, label: Title, type: object, fields: *bi }
               - { name: text, label: Text, type: object, fields: *bil }
-      - { name: lab, label: Lab placeholder, type: object, fields: *bi }
 
   # ---------------------------------------------------------- SHOWCASE
   - name: showcase
@@ -282,17 +281,33 @@ content:
           - { name: eyebrow, type: object, fields: *bi, label: Eyebrow }
           - { name: title, type: object, fields: *bi, label: Title }
           - { name: lead, type: object, fields: *bil, label: Lead }
-      - { name: filters, label: Filter chips, type: object, list: true, fields: *bi }
-      - { name: filterNote, label: Filter note, type: object, fields: *bi }
+      - name: filters
+        label: Filter chips
+        type: object
+        list: true
+        fields:
+          - { name: key, label: "Key (all / web / design / interface)", type: string }
+          - { name: en, label: English, type: string }
+          - { name: de, label: Deutsch, type: string }
       - name: tiles
         label: Projects
         type: object
         list: true
         fields:
-          - { name: angle, label: Pattern angle, type: number }
+          - { name: slug, label: Slug (URL id), type: string }
+          - { name: category, label: "Filter category (web / design / interface)", type: string }
+          - { name: angle, label: Fallback pattern angle, type: number }
           - { name: title, label: Project name, type: string }
+          - { name: thumb, label: Thumbnail, type: image }
           - { name: tag, label: Tag, type: object, fields: *bi }
           - { name: meta, label: Meta, type: object, fields: *bi }
+          - { name: description, label: Description, type: object, fields: *bil }
+          - name: gallery
+            label: Photo rails
+            type: object
+            list: true
+            fields:
+              - { name: images, label: Images, type: image, list: true }
       - name: cta
         label: CTA
         type: object

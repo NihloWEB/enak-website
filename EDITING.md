@@ -1,4 +1,4 @@
-# AETHER — Inhalte bearbeiten & veröffentlichen
+# EN/AK — Inhalte bearbeiten & veröffentlichen
 
 Die Seite wird mit **Eleventy (11ty)** gebaut: **Inhalte** liegen getrennt vom
 Design in **`src/_data/*.json`** (zweisprachig EN/DE), die **Templates** in `src/`.

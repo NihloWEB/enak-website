@@ -1,5 +1,5 @@
 /* ============================================================
-   main.js — AETHER entry point
+   main.js — EN/AK entry point
    Imports every module and initialises it on DOM ready. Each init
    is a no-op when its target markup isn't on the page, so the same
    bundle drives the landing page and every subpage.
@@ -20,6 +20,8 @@ import { initMagnetic } from './components/magnetic.js';
 import { initTilt } from './components/tilt.js';
 import { initSelector } from './components/selector.js';
 import { initCounters } from './components/counters.js';
+import { initFilters } from './components/filter.js';
+import { initLightbox } from './components/lightbox.js';
 
 ready(() => {
   // i18n + navigation first (structure / chrome)
@@ -41,6 +43,8 @@ ready(() => {
   // interactive widgets
   initSelector();
   initCounters();
+  initFilters();
+  initLightbox();
 
   // Year stamp(s)
   document.querySelectorAll('[data-year]').forEach((el) => {

@@ -1,91 +1,71 @@
 {
   "hero": {
-    "eyebrow": {
-      "en": "Showcase",
-      "de": "Showcase"
-    },
-    "title": {
-      "en": "My projects",
-      "de": "Meine Projekte"
-    },
-    "lead": {
-      "en": "A cross-section of recent work. Each one started as an idea and ended as a living system.",
-      "de": "Ein Querschnitt aktueller Arbeiten. Jede begann als Idee und endete als lebendiges System."
-    }
+    "eyebrow": { "en": "Showcase", "de": "Showcase" },
+    "title": { "en": "My projects", "de": "Meine Projekte" },
+    "lead": { "en": "A cross-section of recent work. Each one started as an idea and ended as a living system.", "de": "Ein Querschnitt aktueller Arbeiten. Jede begann als Idee und endete als lebendiges System." }
   },
   "filters": [
-    {
-      "en": "All",
-      "de": "Alle"
-    },
-    {
-      "en": "WEB-Designs",
-      "de": "WEB-Designs"
-    },
-    {
-      "en": "Designs",
-      "de": "Designs"
-    },
-    {
-      "en": "Interface",
-      "de": "Interface"
-    }
+    { "key": "all", "en": "All", "de": "Alle" },
+    { "key": "web", "en": "WEB-Designs", "de": "WEB-Designs" },
+    { "key": "design", "en": "Designs", "de": "Designs" },
+    { "key": "interface", "en": "Interface", "de": "Interface" }
   ],
-  "filterNote": {
-    "en": "Filtering — coming soon",
-    "de": "Filter — bald verfügbar"
-  },
   "tiles": [
     {
+      "slug": "teamboard",
+      "category": "web",
       "angle": 35,
       "title": "Fivem Server - Teamboard",
-      "tag": {
-        "en": "Webpage",
-        "de": "Website"
+      "thumb": "/assets/img/showcase/teamboard-thumb.svg",
+      "tag": { "en": "Webpage", "de": "Website" },
+      "meta": { "en": "Teamboard system · 2026", "de": "Teammanagement System · 2026" },
+      "description": {
+        "en": "A management board for a FiveM roleplay team — schedules, roles and tasks in one calm interface.",
+        "de": "Ein Teamboard für ein FiveM-Roleplay-Team — Pläne, Rollen und Aufgaben in einer ruhigen Oberfläche."
       },
-      "meta": {
-        "en": "Teamboard system · 2026",
-        "de": "Teammanagement System· 2026"
-      }
+      "gallery": [
+        { "images": ["/assets/img/showcase/teamboard-1.svg", "/assets/img/showcase/teamboard-2.svg", "/assets/img/showcase/teamboard-3.svg"] },
+        { "images": ["/assets/img/showcase/teamboard-4.svg", "/assets/img/showcase/teamboard-5.svg"] }
+      ]
     },
     {
+      "slug": "bw-trainer",
+      "category": "interface",
       "angle": 120,
       "title": "BW-Trainer",
-      "tag": {
-        "en": "Learning & practicing app",
-        "de": "Lern & Übungs App"
+      "thumb": "/assets/img/showcase/bw-trainer-thumb.svg",
+      "tag": { "en": "Learning app", "de": "Lern App" },
+      "meta": { "en": "Assessment-center training app · 2026", "de": "Assessment-Center Lern App · 2026" },
+      "description": {
+        "en": "A learning & practice app for assessment-center prep — questions, scoring and progress tracking.",
+        "de": "Eine Lern- & Übungs-App zur Assessment-Center-Vorbereitung — Fragen, Auswertung und Fortschritt."
       },
-      "meta": {
-        "en": "Assecement-center training app · 2026",
-        "de": "Assessment-Center Lern App· 2026"
-      }
+      "gallery": [
+        { "images": ["/assets/img/showcase/bw-trainer-1.svg", "/assets/img/showcase/bw-trainer-2.svg", "/assets/img/showcase/bw-trainer-3.svg"] },
+        { "images": ["/assets/img/showcase/bw-trainer-4.svg", "/assets/img/showcase/bw-trainer-5.svg"] }
+      ]
     },
     {
+      "slug": "noten-lernen",
+      "category": "interface",
       "angle": 75,
       "title": "Noten Lernen",
-      "tag": {
-        "en": "Learning & practicing app",
-        "de": "Lern & Übungs App"
+      "thumb": "/assets/img/showcase/noten-lernen-thumb.svg",
+      "tag": { "en": "Learning app", "de": "Lern App" },
+      "meta": { "en": "Music learning app · 2026", "de": "Musik Lern App · 2026" },
+      "description": {
+        "en": "A playful app to learn reading sheet music — drills, feedback and steady progress.",
+        "de": "Eine spielerische App zum Notenlesen-Lernen — Übungen, Feedback und stetiger Fortschritt."
       },
-      "meta": {
-        "en": "Music learning app · 2026",
-        "de": "Musik Lern App · 2026"
-      }
+      "gallery": [
+        { "images": ["/assets/img/showcase/noten-lernen-1.svg", "/assets/img/showcase/noten-lernen-2.svg", "/assets/img/showcase/noten-lernen-3.svg"] },
+        { "images": ["/assets/img/showcase/noten-lernen-4.svg", "/assets/img/showcase/noten-lernen-5.svg"] }
+      ]
     }
   ],
   "cta": {
-    "title": {
-      "en": "Your project, here.",
-      "de": "Dein Projekt, hier."
-    },
-    "sub": {
-      "en": "The next project on this wall could be yours.",
-      "de": "Das nächste Projekt an dieser Wand könnte deins sein."
-    },
-    "primary": {
-      "en": "Start a project",
-      "de": "Projekt starten",
-      "url": "/pages/contact/"
-    }
+    "title": { "en": "Your project, here.", "de": "Dein Projekt, hier." },
+    "sub": { "en": "The next project on this wall could be yours.", "de": "Das nächste Projekt an dieser Wand könnte deins sein." },
+    "primary": { "en": "Start a project", "de": "Projekt starten", "url": "/pages/contact/" }
   }
 }

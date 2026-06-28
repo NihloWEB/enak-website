@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: Showcase — AETHER
-description: Selected work from AETHER across brand, motion, interface and spatial design.
+title: Showcase · EN/AK
+description: Selected projects by EN/AK — web design, design and interfaces.
 ---
 
     <section class="page-hero container">
@@ -9,19 +9,25 @@ description: Selected work from AETHER across brand, motion, interface and spati
       <span class="eyebrow page-hero__eyebrow" data-reveal="fade" data-en="{{ showcase.hero.eyebrow.en }}" data-de="{{ showcase.hero.eyebrow.de }}">{{ showcase.hero.eyebrow.en }}</span>
       <h1 class="page-hero__title ink-shine" data-reveal data-en="{{ showcase.hero.title.en }}" data-de="{{ showcase.hero.title.de }}">{{ showcase.hero.title.en }}</h1>
       <p class="page-hero__lead" data-reveal data-en="{{ showcase.hero.lead.en }}" data-de="{{ showcase.hero.lead.de }}">{{ showcase.hero.lead.en }}</p>
-      <div style="margin-top:var(--s-6); display:flex; flex-wrap:wrap; gap:var(--s-2); align-items:center" data-reveal="fade">
+      <div class="filters" data-filters role="tablist" aria-label="Filter projects" data-reveal="fade">
         {%- for f in showcase.filters %}
-        <span class="selector__chip" data-en="{{ f.en }}" data-de="{{ f.de }}">{{ f.en }}</span>
+        <button type="button" class="filter-chip{% if loop.first %} is-active{% endif %}" data-filter="{{ f.key }}" data-en="{{ f.en }}" data-de="{{ f.de }}">{{ f.en }}</button>
         {%- endfor %}
-        <span class="placeholder" data-en="{{ showcase.filterNote.en }}" data-de="{{ showcase.filterNote.de }}">{{ showcase.filterNote.en }}</span>
       </div>
     </section>
 
     <section class="section--tight">
       <div class="container">
-        <div class="grid-3" data-reveal-group="80">
+        <div class="grid-3" data-reveal-group="80" data-project-grid>
           {%- for t in showcase.tiles %}
-          <article class="tile tile--grid" data-reveal><div class="tile__media deco" style="--tile-angle:{{ t.angle }}deg"></div><div class="tile__overlay deco"></div><span class="tile__tag" data-en="{{ t.tag.en }}" data-de="{{ t.tag.de }}">{{ t.tag.en }}</span><h3 class="tile__title">{{ t.title }}</h3><p class="tile__meta" data-en="{{ t.meta.en }}" data-de="{{ t.meta.de }}">{{ t.meta.en }}</p></article>
+          <a class="tile tile--grid" href="#proj-{{ t.slug }}" data-open="{{ t.slug }}" data-category="{{ t.category }}" data-reveal>
+            <div class="tile__media deco" style="--tile-angle:{{ t.angle }}deg">{% if t.thumb %}<img class="tile__thumb" src="{{ t.thumb }}" alt="" loading="lazy" />{% endif %}</div>
+            <div class="tile__overlay deco"></div>
+            <span class="tile__tag" data-en="{{ t.tag.en }}" data-de="{{ t.tag.de }}">{{ t.tag.en }}</span>
+            <h3 class="tile__title">{{ t.title }}</h3>
+            <p class="tile__meta" data-en="{{ t.meta.en }}" data-de="{{ t.meta.de }}">{{ t.meta.en }}</p>
+            <span class="tile__open" aria-hidden="true" data-en="View project" data-de="Projekt ansehen">View project</span>
+          </a>
           {%- endfor %}
         </div>
       </div>
@@ -39,3 +45,28 @@ description: Selected work from AETHER across brand, motion, interface and spati
         </div>
       </div>
     </section>
+
+    <!-- ===================== Project lightbox (overlay) ===================== -->
+    <div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="lightbox__backdrop" data-lightbox-close></div>
+      <button class="lightbox__close icon-btn" data-lightbox-close data-en-aria="Close project" data-de-aria="Projekt schließen" aria-label="Close project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="lightbox__scroll">
+        {%- for t in showcase.tiles %}
+        <article class="project" id="proj-{{ t.slug }}" data-panel="{{ t.slug }}" hidden>
+          <span class="eyebrow" data-en="{{ t.tag.en }}" data-de="{{ t.tag.de }}">{{ t.tag.en }}</span>
+          <h2 class="project__title">{{ t.title }}</h2>
+          <p class="project__meta" data-en="{{ t.meta.en }}" data-de="{{ t.meta.de }}">{{ t.meta.en }}</p>
+          <p class="project__desc lead" data-en="{{ t.description.en }}" data-de="{{ t.description.de }}">{{ t.description.en }}</p>
+          {%- for rail in t.gallery %}
+          <div class="project__rail">
+            {%- for img in rail.images %}
+            <img src="{{ img }}" alt="" loading="lazy" />
+            {%- endfor %}
+          </div>
+          {%- endfor %}
+        </article>
+        {%- endfor %}
+      </div>
+    </div>

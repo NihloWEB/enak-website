@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-#  AETHER — local dev (Eleventy)
+#  EN/AK — local dev (Eleventy)
 #  Double-click to install deps (first run) and start the dev
 #  server with live reload. Edits to src/ rebuild automatically.
 # ============================================================
@@ -8,7 +8,7 @@
 cd "$(dirname "$0")" || exit 1
 
 echo ""
-echo "  AETHER — starting Eleventy dev server…"
+echo "  EN/AK — starting Eleventy dev server…"
 echo ""
 
 # Install dependencies on first run

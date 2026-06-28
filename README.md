@@ -1,4 +1,4 @@
-# AETHER — Creative Studio Website
+# EN/AK — Creative Studio Website
 
 A futuristic, monochrome, **liquid-glass** site with Apple-style scroll motion.
 Built with **Eleventy (11ty)** — content lives in editable data files and is

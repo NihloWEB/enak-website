@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: Overview — AETHER
-description: An overview of AETHER — an independent creative studio working across brand, motion, interface and spatial design.
+title: Overview · EN/AK
+description: An overview of EN/AK — web design, design and interface projects.
 ---
 
     <section class="page-hero container">
@@ -18,7 +18,6 @@ description: An overview of AETHER — an independent creative studio working ac
           {%- for p in overview.intro.paragraphs %}
           <p class="muted" data-en="{{ p.en }}" data-de="{{ p.de }}">{{ p.en }}</p>
           {%- endfor %}
-          <span class="placeholder" data-en="{{ overview.intro.placeholder.en }}" data-de="{{ overview.intro.placeholder.de }}">{{ overview.intro.placeholder.en }}</span>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-# CLAUDE.md — AETHER Project Worksheet
+# CLAUDE.md — EN/AK Project Worksheet
 
 Guidance for Claude Code (and humans) working in this repository.
 
@@ -6,7 +6,7 @@ Guidance for Claude Code (and humans) working in this repository.
 
 ## 1. What this project is
 
-**AETHER** is a futuristic **creative-studio** site (landing page + 5 subpages):
+**EN/AK** is a futuristic **creative-studio** site (landing page + 5 subpages):
 heavy on motion, scroll effects and **liquid glass**, in an **Apple-like
 monochrome** aesthetic. Brand / copy / projects are **placeholders**.
 
@@ -28,7 +28,7 @@ monochrome** aesthetic. Brand / copy / projects are **placeholders**.
 | Build | Eleventy → `_site/` |
 | CMS | Pages CMS (`.pages.yml`), GitHub-backed |
 | Host | Vercel (`buildCommand: npx @11ty/eleventy`, `outputDirectory: _site`) |
-| Brand | **AETHER** (placeholder — edit in `src/_data/site.json`) |
+| Brand | **EN/AK** (placeholder — edit in `src/_data/site.json`) |
 
 ---
 

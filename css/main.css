@@ -1,5 +1,5 @@
 /* ============================================================
-   main.css — AETHER stylesheet entry point
+   main.css — EN/AK stylesheet entry point
    Imports the cascade in order: tokens → reset → type → utils →
    animations → components → sections. Link only this file in HTML.
    ============================================================ */
@@ -21,6 +21,7 @@
 @import url("components/selector.css");
 @import url("components/marquee.css");
 @import url("components/footer.css");
+@import url("components/lightbox.css");
 
 /* sections */
 @import url("sections/hero.css");
