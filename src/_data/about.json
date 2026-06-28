@@ -1,36 +1,166 @@
 {
   "hero": {
-    "eyebrow": { "en": "About", "de": "Über uns" },
-    "title": { "en": "We are AETHER.", "de": "Wir sind AETHER." },
-    "lead": { "en": "A studio founded on a simple conviction: that the best work doesn't just look good — it feels alive.", "de": "Ein Studio, gegründet auf einer einfachen Überzeugung: Die beste Arbeit sieht nicht nur gut aus — sie fühlt sich lebendig an." }
+    "eyebrow": {
+      "en": "About me",
+      "de": "Über mich"
+    },
+    "title": {
+      "en": "EN/AK",
+      "de": "EN/AK"
+    },
+    "lead": {
+      "en": "A studio founded on a simple conviction: that the best work doesn't just look good — it feels alive.",
+      "de": "Ein Studio, gegründet auf einer einfachen Überzeugung: Die beste Arbeit sieht nicht nur gut aus — sie fühlt sich lebendig an."
+    }
   },
-  "statement": { "en": "Started in a small studio in 2017, we grew by saying no to forgettable work.", "de": "2017 in einem kleinen Studio gestartet, sind wir gewachsen, indem wir zu vergessbarer Arbeit Nein gesagt haben." },
+  "statement": {
+    "en": "Started in a small studio in 2017, we grew by saying no to forgettable work.",
+    "de": "2017 in einem kleinen Studio gestartet, sind wir gewachsen, indem wir zu vergessbarer Arbeit Nein gesagt haben."
+  },
   "values": {
-    "eyebrow": { "en": "What we believe", "de": "Woran wir glauben" },
-    "title": { "en": "Three values.", "de": "Drei Werte." },
+    "eyebrow": {
+      "en": "What we believe",
+      "de": "Woran wir glauben"
+    },
+    "title": {
+      "en": "Three values.",
+      "de": "Drei Werte."
+    },
     "items": [
-      { "no": "01", "title": { "en": "Alive over static", "de": "Lebendig statt statisch" }, "text": { "en": "If it doesn't move you, it doesn't move. Motion is a first-class material.", "de": "Was nicht bewegt, bewegt nichts. Motion ist ein erstklassiges Material." } },
-      { "no": "02", "title": { "en": "Craft over volume", "de": "Handwerk statt Masse" }, "text": { "en": "Few projects, deeply done. We'd rather go further than wider.", "de": "Wenige Projekte, in die Tiefe gedacht. Lieber weiter als breiter." } },
-      { "no": "03", "title": { "en": "Partners over clients", "de": "Partner statt Kunden" }, "text": { "en": "We build with you, in the open, and leave you stronger than we found you.", "de": "Wir bauen mit Ihnen, offen, und hinterlassen Sie stärker als zuvor." } }
+      {
+        "no": "01",
+        "title": {
+          "en": "Alive over static",
+          "de": "Lebendig statt statisch"
+        },
+        "text": {
+          "en": "If it doesn't move you, it doesn't move. Motion is a first-class material.",
+          "de": "Was nicht bewegt, bewegt nichts. Motion ist ein erstklassiges Material."
+        }
+      },
+      {
+        "no": "02",
+        "title": {
+          "en": "Craft over volume",
+          "de": "Handwerk statt Masse"
+        },
+        "text": {
+          "en": "Few projects, deeply done. We'd rather go further than wider.",
+          "de": "Wenige Projekte, in die Tiefe gedacht. Lieber weiter als breiter."
+        }
+      },
+      {
+        "no": "03",
+        "title": {
+          "en": "Partners over clients",
+          "de": "Partner statt Kunden"
+        },
+        "text": {
+          "en": "We build with you, in the open, and leave you stronger than we found you.",
+          "de": "Wir bauen mit Ihnen, offen, und hinterlassen Sie stärker als zuvor."
+        }
+      }
     ]
   },
   "team": {
-    "eyebrow": { "en": "The team", "de": "Das Team" },
-    "title": { "en": "Small. Senior. Obsessive.", "de": "Klein. Erfahren. Besessen." },
+    "eyebrow": {
+      "en": "The team",
+      "de": "Das Team"
+    },
+    "title": {
+      "en": "Small. Senior. Obsessive.",
+      "de": "Klein. Erfahren. Besessen."
+    },
     "members": [
-      { "avatar": "A", "name": { "en": "Founder & ECD", "de": "Gründer & ECD" }, "role": { "en": "Name coming soon", "de": "Name folgt" } },
-      { "avatar": "M", "name": { "en": "Head of Motion", "de": "Leitung Motion" }, "role": { "en": "Name coming soon", "de": "Name folgt" } },
-      { "avatar": "D", "name": { "en": "Design Director", "de": "Design Director" }, "role": { "en": "Name coming soon", "de": "Name folgt" } },
-      { "avatar": "+", "name": { "en": "We're hiring", "de": "Wir stellen ein" }, "role": { "en": "Join the studio", "de": "Werde Teil des Studios" } }
+      {
+        "avatar": "A",
+        "name": {
+          "en": "Founder & ECD",
+          "de": "Gründer & ECD"
+        },
+        "role": {
+          "en": "Name coming soon",
+          "de": "Name folgt"
+        }
+      },
+      {
+        "avatar": "M",
+        "name": {
+          "en": "Head of Motion",
+          "de": "Leitung Motion"
+        },
+        "role": {
+          "en": "Name coming soon",
+          "de": "Name folgt"
+        }
+      },
+      {
+        "avatar": "D",
+        "name": {
+          "en": "Design Director",
+          "de": "Design Director"
+        },
+        "role": {
+          "en": "Name coming soon",
+          "de": "Name folgt"
+        }
+      },
+      {
+        "avatar": "+",
+        "name": {
+          "en": "We're hiring",
+          "de": "Wir stellen ein"
+        },
+        "role": {
+          "en": "Join the studio",
+          "de": "Werde Teil des Studios"
+        }
+      }
     ]
   },
   "milestones": {
-    "eyebrow": { "en": "Milestones", "de": "Meilensteine" },
-    "title": { "en": "A short history.", "de": "Eine kurze Geschichte." },
+    "eyebrow": {
+      "en": "Milestones",
+      "de": "Meilensteine"
+    },
+    "title": {
+      "en": "A short history.",
+      "de": "Eine kurze Geschichte."
+    },
     "steps": [
-      { "no": "'17", "title": { "en": "Founded", "de": "Gegründet" }, "text": { "en": "Two people, one room, a lot of late nights.", "de": "Zwei Menschen, ein Raum, viele lange Nächte." } },
-      { "no": "'21", "title": { "en": "Went global", "de": "Global gegangen" }, "text": { "en": "Remote-first, clients across three continents.", "de": "Remote-first, Kunden auf drei Kontinenten." } },
-      { "no": "'26", "title": { "en": "What's next", "de": "Was kommt" }, "text": { "en": "Spatial, real-time and AI-native design. This is the start.", "de": "Räumlich, in Echtzeit und AI-nativ. Das ist erst der Anfang." } }
+      {
+        "no": "'17",
+        "title": {
+          "en": "Founded",
+          "de": "Gegründet"
+        },
+        "text": {
+          "en": "Two people, one room, a lot of late nights.",
+          "de": "Zwei Menschen, ein Raum, viele lange Nächte."
+        }
+      },
+      {
+        "no": "'21",
+        "title": {
+          "en": "Went global",
+          "de": "Global gegangen"
+        },
+        "text": {
+          "en": "Remote-first, clients across three continents.",
+          "de": "Remote-first, Kunden auf drei Kontinenten."
+        }
+      },
+      {
+        "no": "'26",
+        "title": {
+          "en": "What's next",
+          "de": "Was kommt"
+        },
+        "text": {
+          "en": "Spatial, real-time and AI-native design. This is the start.",
+          "de": "Räumlich, in Echtzeit und AI-nativ. Das ist erst der Anfang."
+        }
+      }
     ]
   }
 }
