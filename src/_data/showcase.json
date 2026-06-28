@@ -38,14 +38,14 @@
   "tiles": [
     {
       "angle": 35,
-      "title": "Helix",
+      "title": "Fivem Server - Teamboard",
       "tag": {
-        "en": "Brand",
-        "de": "Marke"
+        "en": "Webpage",
+        "de": "Website"
       },
       "meta": {
-        "en": "Identity system · 2025",
-        "de": "Identitätssystem · 2025"
+        "en": "Teamboard system · 2026",
+        "de": "Teammanagement System· 2026"
       }
     },
     {
@@ -70,78 +70,6 @@
       "meta": {
         "en": "Product design · 2024",
         "de": "Produktdesign · 2024"
-      }
-    },
-    {
-      "angle": 160,
-      "title": "Monolith",
-      "tag": {
-        "en": "Spatial",
-        "de": "Räumlich"
-      },
-      "meta": {
-        "en": "Installation · 2024",
-        "de": "Installation · 2024"
-      }
-    },
-    {
-      "angle": 95,
-      "title": "Veil",
-      "tag": {
-        "en": "Web",
-        "de": "Web"
-      },
-      "meta": {
-        "en": "Site of the year · 2023",
-        "de": "Site des Jahres · 2023"
-      }
-    },
-    {
-      "angle": 50,
-      "title": "Pulse",
-      "tag": {
-        "en": "Film",
-        "de": "Film"
-      },
-      "meta": {
-        "en": "Brand film · 2023",
-        "de": "Markenfilm · 2023"
-      }
-    },
-    {
-      "angle": 140,
-      "title": "Cobalt",
-      "tag": {
-        "en": "Brand",
-        "de": "Marke"
-      },
-      "meta": {
-        "en": "Rebrand · 2023",
-        "de": "Rebranding · 2023"
-      }
-    },
-    {
-      "angle": 20,
-      "title": "Atlas",
-      "tag": {
-        "en": "Interface",
-        "de": "Interface"
-      },
-      "meta": {
-        "en": "Design system · 2022",
-        "de": "Designsystem · 2022"
-      }
-    },
-    {
-      "angle": 110,
-      "title": "Drift",
-      "tag": {
-        "en": "Spatial",
-        "de": "Räumlich"
-      },
-      "meta": {
-        "en": "XR concept · 2022",
-        "de": "XR-Konzept · 2022"
       }
     }
   ],
