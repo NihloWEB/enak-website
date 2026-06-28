@@ -120,6 +120,17 @@
       {
         "no": "'26",
         "title": {
+          "en": "More Projects",
+          "de": "mehr Projekte"
+        },
+        "text": {
+          "en": "More knowledge means more projects. Music learn app or a teamboard. I think these are overall cool projects with much love.",
+          "de": "Mehr Wissen bedeutet mehr Projekte. Meine Musik app oder mein Teamboard. Ich finde die schon sehr cool."
+        }
+      },
+      {
+        "no": "'26",
+        "title": {
           "en": "What's next",
           "de": "Was kommt"
         },
