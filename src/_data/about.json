@@ -73,36 +73,14 @@
         }
       },
       {
-        "avatar": "M",
+        "avatar": "C",
         "name": {
-          "en": "Head of Motion",
-          "de": "Leitung Motion"
+          "en": "My Darling",
+          "de": "Mein Schätzchen"
         },
         "role": {
-          "en": "Name coming soon",
-          "de": "Name folgt"
-        }
-      },
-      {
-        "avatar": "D",
-        "name": {
-          "en": "Design Director",
-          "de": "Design Director"
-        },
-        "role": {
-          "en": "Name coming soon",
-          "de": "Name folgt"
-        }
-      },
-      {
-        "avatar": "+",
-        "name": {
-          "en": "We're hiring",
-          "de": "Wir stellen ein"
-        },
-        "role": {
-          "en": "Join the studio",
-          "de": "Werde Teil des Studios"
+          "en": "Claude :D",
+          "de": "Claude :D"
         }
       }
     ]
