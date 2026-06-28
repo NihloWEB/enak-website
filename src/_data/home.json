@@ -217,42 +217,6 @@
           "en": "Music learning app · 2026",
           "de": "Musik Lern App · 2026"
         }
-      },
-      {
-        "angle": 160,
-        "title": "Monolith",
-        "tag": {
-          "en": "Spatial",
-          "de": "Räumlich"
-        },
-        "meta": {
-          "en": "Installation · 2024",
-          "de": "Installation · 2024"
-        }
-      },
-      {
-        "angle": 95,
-        "title": "Veil",
-        "tag": {
-          "en": "Web",
-          "de": "Web"
-        },
-        "meta": {
-          "en": "Site of the year · 2023",
-          "de": "Site des Jahres · 2023"
-        }
-      },
-      {
-        "angle": 50,
-        "title": "Pulse",
-        "tag": {
-          "en": "Film",
-          "de": "Film"
-        },
-        "meta": {
-          "en": "Brand film · 2023",
-          "de": "Markenfilm · 2023"
-        }
       }
     ]
   },
