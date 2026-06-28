@@ -76,11 +76,11 @@
       {
         "title": {
           "en": "Headless",
-          "de": "Headless"
+          "de": "Kopflos"
         },
         "text": {
           "en": "Composable, headless front-ends that your team can own and extend.",
-          "de": "Komponierbare, headless Frontends, die Ihr Team selbst weiterführt."
+          "de": "Komponierbare, Kopflose Frontends, die Ihr Team selbst weiterführt."
         }
       }
     ]
