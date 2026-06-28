@@ -25,12 +25,12 @@
     "cards": [
       {
         "title": {
-          "en": "Real-time 3D",
-          "de": "Echtzeit-3D"
+          "en": "Design",
+          "de": "Gestaltung"
         },
         "text": {
-          "en": "WebGL & WebGPU pipelines for interactive worlds that run in the browser.",
-          "de": "WebGL- & WebGPU-Pipelines für interaktive Welten direkt im Browser."
+          "en": "The design to see all of its beauty.",
+          "de": "Die Gestaltung um die ganze Schönheit zu sehen."
         }
       },
       {
