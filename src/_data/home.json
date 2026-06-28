@@ -254,12 +254,12 @@
   ],
   "process": {
     "eyebrow": {
-      "en": "How we work",
-      "de": "Arbeitsweise"
+      "en": "How I work",
+      "de": "Wie ich arbeite"
     },
     "title": {
       "en": "From spark to signal.",
-      "de": "Vom Funken zum Signal."
+      "de": "Von der Idee zur Finalisierung."
     },
     "steps": [
       {
