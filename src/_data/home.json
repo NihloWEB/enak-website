@@ -157,12 +157,12 @@
         },
         "chips": [
           {
-            "en": "Installations",
-            "de": "Installationen"
+            "en": "Social Media",
+            "de": "Soziale Netzwerke"
           },
           {
-            "en": "Real-time 3D",
-            "de": "Echtzeit-3D"
+            "en": "Plakate & Banner",
+            "de": "Plakate & Banner"
           },
           {
             "en": "WebGL",
