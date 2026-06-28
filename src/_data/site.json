@@ -32,7 +32,7 @@
       "url": "/pages/about/",
       "label": {
         "en": "About",
-        "de": "Über uns"
+        "de": "Über mich"
       }
     }
   ],
@@ -43,8 +43,8 @@
   },
   "footer": {
     "tagline": {
-      "en": "A creative studio for what comes next. Berlin & everywhere.",
-      "de": "Ein Kreativstudio für das, was kommt. Berlin & überall."
+      "en": "Projects made easy.",
+      "de": "Projekte einfach gemacht."
     },
     "studioHeading": {
       "en": "Studio",
