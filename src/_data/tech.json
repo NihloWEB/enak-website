@@ -1,29 +1,137 @@
 {
   "hero": {
-    "eyebrow": { "en": "Tech", "de": "Technik" },
-    "title": { "en": "Craft, engineered.", "de": "Handwerk, technisch gedacht." },
-    "lead": { "en": "Beautiful is not enough. We engineer our work to be fast, accessible and alive on every device — design and code as one discipline.", "de": "Schön allein genügt nicht. Wir bauen unsere Arbeit schnell, zugänglich und lebendig auf jedem Gerät — Design und Code als eine Disziplin." }
+    "eyebrow": {
+      "en": "Tech",
+      "de": "Technik"
+    },
+    "title": {
+      "en": "Craft, engineered.",
+      "de": "Handwerk, technisch gedacht."
+    },
+    "lead": {
+      "en": "Beautiful is not enough. I craft my work to be fast, accessible and alive on every device — design and functionality in one.",
+      "de": "Schön allein genügt nicht. Ich gestalte meine Arbeit schnell, zugänglich und lebendig auf jedem Gerät — Design und Funktionalität in einem."
+    }
   },
   "stack": {
-    "eyebrow": { "en": "The stack", "de": "Der Stack" },
-    "title": { "en": "What powers the work.", "de": "Was die Arbeit antreibt." },
+    "eyebrow": {
+      "en": "The stack",
+      "de": "Der Stack"
+    },
+    "title": {
+      "en": "What powers the work.",
+      "de": "Was die Arbeit antreibt."
+    },
     "cards": [
-      { "title": { "en": "Real-time 3D", "de": "Echtzeit-3D" }, "text": { "en": "WebGL & WebGPU pipelines for interactive worlds that run in the browser.", "de": "WebGL- & WebGPU-Pipelines für interaktive Welten direkt im Browser." } },
-      { "title": { "en": "Motion systems", "de": "Motion-Systeme" }, "text": { "en": "Scroll-driven choreography and physics-based easing, tuned for 60fps.", "de": "Scroll-Choreografie und physikbasiertes Easing, abgestimmt auf 60fps." } },
-      { "title": { "en": "Design tokens", "de": "Design-Tokens" }, "text": { "en": "One source of truth that flows from Figma to production CSS.", "de": "Eine einzige Quelle der Wahrheit — von Figma bis zum produktiven CSS." } },
-      { "title": { "en": "Performance", "de": "Performance" }, "text": { "en": "Budgets, lazy media and GPU-friendly transforms — speed as a feature.", "de": "Budgets, Lazy-Media und GPU-freundliche Transforms — Tempo als Feature." } },
-      { "title": { "en": "Accessibility", "de": "Barrierefreiheit" }, "text": { "en": "Reduced-motion, keyboard paths and contrast baked in, not bolted on.", "de": "Reduced-Motion, Tastaturpfade und Kontrast von Anfang an mitgedacht." } },
-      { "title": { "en": "Headless", "de": "Headless" }, "text": { "en": "Composable, headless front-ends that your team can own and extend.", "de": "Komponierbare, headless Frontends, die Ihr Team selbst weiterführt." } }
+      {
+        "title": {
+          "en": "Real-time 3D",
+          "de": "Echtzeit-3D"
+        },
+        "text": {
+          "en": "WebGL & WebGPU pipelines for interactive worlds that run in the browser.",
+          "de": "WebGL- & WebGPU-Pipelines für interaktive Welten direkt im Browser."
+        }
+      },
+      {
+        "title": {
+          "en": "Motion systems",
+          "de": "Motion-Systeme"
+        },
+        "text": {
+          "en": "Scroll-driven choreography and physics-based easing, tuned for 60fps.",
+          "de": "Scroll-Choreografie und physikbasiertes Easing, abgestimmt auf 60fps."
+        }
+      },
+      {
+        "title": {
+          "en": "Design tokens",
+          "de": "Design-Tokens"
+        },
+        "text": {
+          "en": "One source of truth that flows from Figma to production CSS.",
+          "de": "Eine einzige Quelle der Wahrheit — von Figma bis zum produktiven CSS."
+        }
+      },
+      {
+        "title": {
+          "en": "Performance",
+          "de": "Performance"
+        },
+        "text": {
+          "en": "Budgets, lazy media and GPU-friendly transforms — speed as a feature.",
+          "de": "Budgets, Lazy-Media und GPU-freundliche Transforms — Tempo als Feature."
+        }
+      },
+      {
+        "title": {
+          "en": "Accessibility",
+          "de": "Barrierefreiheit"
+        },
+        "text": {
+          "en": "Reduced-motion, keyboard paths and contrast baked in, not bolted on.",
+          "de": "Reduced-Motion, Tastaturpfade und Kontrast von Anfang an mitgedacht."
+        }
+      },
+      {
+        "title": {
+          "en": "Headless",
+          "de": "Headless"
+        },
+        "text": {
+          "en": "Composable, headless front-ends that your team can own and extend.",
+          "de": "Komponierbare, headless Frontends, die Ihr Team selbst weiterführt."
+        }
+      }
     ]
   },
   "principles": {
-    "eyebrow": { "en": "Principles", "de": "Prinzipien" },
-    "title": { "en": "How we keep it alive.", "de": "Wie wir es lebendig halten." },
+    "eyebrow": {
+      "en": "Principles",
+      "de": "Prinzipien"
+    },
+    "title": {
+      "en": "How we keep it alive.",
+      "de": "Wie wir es lebendig halten."
+    },
     "steps": [
-      { "no": "01", "title": { "en": "Motion with meaning", "de": "Motion mit Bedeutung" }, "text": { "en": "Every animation earns its place — it guides, it never distracts.", "de": "Jede Animation hat einen Zweck — sie führt, statt abzulenken." } },
-      { "no": "02", "title": { "en": "Respect the user", "de": "Den Nutzer respektieren" }, "text": { "en": "We honour reduced-motion and slow networks. Delight is never a tax.", "de": "Wir achten Reduced-Motion und langsame Netze. Begeisterung kostet nichts extra." } },
-      { "no": "03", "title": { "en": "Ship the system", "de": "Das System ausliefern" }, "text": { "en": "You leave with documented, reusable components — not a one-off.", "de": "Sie erhalten dokumentierte, wiederverwendbare Komponenten — kein Einzelstück." } }
+      {
+        "no": "01",
+        "title": {
+          "en": "Motion with meaning",
+          "de": "Motion mit Bedeutung"
+        },
+        "text": {
+          "en": "Every animation earns its place — it guides, it never distracts.",
+          "de": "Jede Animation hat einen Zweck — sie führt, statt abzulenken."
+        }
+      },
+      {
+        "no": "02",
+        "title": {
+          "en": "Respect the user",
+          "de": "Den Nutzer respektieren"
+        },
+        "text": {
+          "en": "We honour reduced-motion and slow networks. Delight is never a tax.",
+          "de": "Wir achten Reduced-Motion und langsame Netze. Begeisterung kostet nichts extra."
+        }
+      },
+      {
+        "no": "03",
+        "title": {
+          "en": "Ship the system",
+          "de": "Das System ausliefern"
+        },
+        "text": {
+          "en": "You leave with documented, reusable components — not a one-off.",
+          "de": "Sie erhalten dokumentierte, wiederverwendbare Komponenten — kein Einzelstück."
+        }
+      }
     ]
   },
-  "lab": { "en": "The Lab — live experiments coming soon", "de": "Das Lab — Live-Experimente bald verfügbar" }
+  "lab": {
+    "en": "The Lab — live experiments coming soon",
+    "de": "Das Lab — Live-Experimente bald verfügbar"
+  }
 }
