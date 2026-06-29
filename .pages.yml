@@ -308,7 +308,7 @@ content:
             type: object
             list: true
             fields:
-              - { name: images, label: Images, type: image, options: { multiple: true } }
+              - { name: images, label: Images, type: image, options: { multiple: { max: 20 } } }
       - name: cta
         label: CTA
         type: object
