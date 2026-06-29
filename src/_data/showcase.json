@@ -37,40 +37,6 @@
   ],
   "tiles": [
     {
-      "slug": "teamboard",
-      "category": "web",
-      "angle": 35,
-      "title": "Fivem Server - Teamboard",
-      "thumb": "/assets/img/ChatGPT Image 29. Juni 2026, 11_10_14.png",
-      "tag": {
-        "en": "Webpage",
-        "de": "Website"
-      },
-      "meta": {
-        "en": "Teamboard system · 2026",
-        "de": "Teammanagement System · 2026"
-      },
-      "description": {
-        "en": "A management board for a FiveM roleplay team — schedules, roles and tasks in one calm interface.",
-        "de": "Ein Teamboard für ein FiveM-Roleplay-Team — Pläne, Rollen und Aufgaben in einer ruhigen Oberfläche."
-      },
-      "gallery": [
-        {
-          "images": [
-            "/assets/img/showcase/teamboard-1.svg",
-            "/assets/img/showcase/teamboard-2.svg",
-            "/assets/img/showcase/teamboard-3.svg"
-          ]
-        },
-        {
-          "images": [
-            "/assets/img/showcase/teamboard-4.svg",
-            "/assets/img/showcase/teamboard-5.svg"
-          ]
-        }
-      ]
-    },
-    {
       "slug": "bw-trainer",
       "category": "interface",
       "angle": 120,
