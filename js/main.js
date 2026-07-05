@@ -5,7 +5,7 @@
    bundle drives the landing page and every subpage.
    ============================================================ */
 
-import { ready } from './core/utils.js';
+import { ready, prefersReducedMotion, isTouch } from './core/utils.js';
 import { initI18n } from './core/i18n.js';
 
 import { initReveal } from './effects/reveal.js';
@@ -50,4 +50,18 @@ ready(() => {
   document.querySelectorAll('[data-year]').forEach((el) => {
     el.textContent = new Date().getFullYear();
   });
+
+  // About-page 3D book — progressive enhancement (WebGL + motion + desktop only)
+  const bookSection = document.querySelector('[data-book]');
+  const webglOK = (() => {
+    try {
+      const c = document.createElement('canvas');
+      return !!(window.WebGLRenderingContext && (c.getContext('webgl') || c.getContext('experimental-webgl')));
+    } catch (e) { return false; }
+  })();
+  if (bookSection && webglOK && !prefersReducedMotion() && !isTouch() && window.innerWidth > 760) {
+    import('./effects/book.js')
+      .then((m) => m.initBook(bookSection))
+      .catch((e) => console.warn('[book] init failed', e));
+  }
 });
