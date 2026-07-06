@@ -1,7 +1,13 @@
 {
   "hero": {
-    "eyebrow": { "en": "Legal", "de": "Rechtliches" },
-    "title": { "en": "Legal Notice", "de": "Impressum" }
+    "eyebrow": {
+      "en": "Legal",
+      "de": "Rechtliches"
+    },
+    "title": {
+      "en": "Legal Notice",
+      "de": "Impressum"
+    }
   },
   "provider": {
     "heading": "Impressum",
@@ -11,7 +17,6 @@
   },
   "contact": {
     "heading": "Kontakt",
-    "phone": "Telefon: 01799333376",
     "email": "E-Mail: info@en-ak.com"
   },
   "source": "e-recht24.de"
