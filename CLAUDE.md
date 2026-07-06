@@ -140,10 +140,20 @@ loop (`js/core/scroll-engine.js`) feeds scrubbed effects.
 | Selector ("selections") | `components/selector.js` | `data-selector` + `.segmented` |
 | Counters | `components/counters.js` | `data-count="120" data-suffix="+"` |
 | Nav condense + menu | `components/nav.js` | `data-nav`, `data-menu`, `data-burger` |
+| Project lightbox (photo fan-out + zoom) | `components/lightbox.js` | `data-open="slug"` tile, `.project__spread` + `.spread-item` |
 
 **Accessibility:** every effect respects `prefers-reduced-motion`; reveals only
 apply under `html.js` (no-JS fallback shows everything); the custom cursor is
 disabled on touch / reduced-motion.
+
+**Showcase project lightbox** (`src/pages/showcase.njk` + `css/components/lightbox.css`
++ `js/components/lightbox.js`): opening a project shows all its photos at once in a
+tilted 2-col grid (`.project__spread`) — no side-scroll rail. On every open, the grid
+fans out from a stacked "closed book" center with a cascading, springy entrance
+(pure CSS `@keyframes`, delays via `nth-child`); photos then idle-drift slowly.
+Clicking a photo zooms it via `[data-zoomview]`; Esc closes the zoom first, then the
+lightbox. Each project can show an optional **Download button** (app link) — toggle
+per-project in Pages CMS (`showcase.tiles[].download.enabled` + label/url).
 
 ---
 
