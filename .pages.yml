@@ -440,11 +440,19 @@ content:
         fields:
           - { name: eyebrow, type: object, fields: *bi, label: Eyebrow }
           - { name: title, type: object, fields: *bi, label: Title }
-      - name: sections
-        label: Sections
+      - name: provider
+        label: "Provider block (Impressum)"
         type: object
-        list: true
         fields:
           - { name: heading, label: Heading, type: string }
-          - { name: lines, label: Lines, type: string, list: true }
+          - { name: name, label: Name, type: string }
+          - { name: street, label: Street, type: string }
+          - { name: city, label: "ZIP + City", type: string }
+      - name: contact
+        label: "Contact block"
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string }
+          - { name: phone, label: Phone line, type: string }
+          - { name: email, label: Email line, type: string }
       - { name: source, label: Source, type: string }
