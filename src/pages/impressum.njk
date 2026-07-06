@@ -12,14 +12,17 @@ description: Impressum / legal notice for EN/AK.
 
     <section class="section--tight">
       <div class="container measure stack-lg" data-reveal-group="90">
-        {%- for s in impressum.sections %}
         <div class="stack" data-reveal>
-          <h2 style="font-size: var(--t-h3)">{{ s.heading }}</h2>
-          {%- for line in s.lines %}
-          <p class="muted">{{ line }}</p>
-          {%- endfor %}
+          <h2 style="font-size: var(--t-h3)">{{ impressum.provider.heading }}</h2>
+          <p class="muted">{{ impressum.provider.name }}</p>
+          <p class="muted">{{ impressum.provider.street }}</p>
+          <p class="muted">{{ impressum.provider.city }}</p>
         </div>
-        {%- endfor %}
+        <div class="stack" data-reveal>
+          <h2 style="font-size: var(--t-h3)">{{ impressum.contact.heading }}</h2>
+          <p class="muted">{{ impressum.contact.phone }}</p>
+          <p class="muted">{{ impressum.contact.email }}</p>
+        </div>
         <p class="muted" style="font-size: var(--t-small)" data-reveal>Quelle: {{ impressum.source }}</p>
       </div>
     </section>
