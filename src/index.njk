@@ -91,21 +91,18 @@ permalink: /index.html
       </div>
     </section>
 
-    <!-- ============================== SHOWCASE ============================== -->
-    <section class="showcase" data-horizontal id="work">
-      <div class="showcase__pin">
-        <div class="showcase__head">
-          <div>
-            <span class="eyebrow" data-en="{{ home.showcase.eyebrow.en }}" data-de="{{ home.showcase.eyebrow.de }}">{{ home.showcase.eyebrow.en }}</span>
-            <h2 class="section-head__title" data-en="{{ home.showcase.title.en }}" data-de="{{ home.showcase.title.de }}">{{ home.showcase.title.en }}</h2>
+    <!-- ========================= SHOWCASE (link) ========================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow" data-en="{{ home.showcase.eyebrow.en }}" data-de="{{ home.showcase.eyebrow.de }}">{{ home.showcase.eyebrow.en }}</span>
+          <h2 class="section-head__title" data-en="{{ home.showcase.title.en }}" data-de="{{ home.showcase.title.de }}">{{ home.showcase.title.en }}</h2>
+          <div style="margin-top: var(--s-6)">
+            <a class="btn btn--glass btn--sm" href="/pages/showcase/" data-magnetic="0.3">
+              <span data-en="View showcase" data-de="Showcase ansehen">View showcase</span>
+              <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
           </div>
-          <div class="showcase__progress deco" aria-hidden="true"><i></i></div>
-        </div>
-
-        <div class="showcase__track">
-          {%- for t in home.showcase.tiles %}
-          <a class="tile" href="/pages/showcase/" aria-label="{{ t.title }}"><div class="tile__media deco" style="--tile-angle:{{ t.angle }}deg">{% if t.thumb %}<img class="tile__thumb" src="{{ t.thumb }}" alt="{{ t.title }}" loading="lazy" />{% endif %}</div></a>
-          {%- endfor %}
         </div>
       </div>
     </section>
