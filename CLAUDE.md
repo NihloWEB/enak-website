@@ -16,7 +16,8 @@ monochrome** aesthetic. Brand / copy / projects are **placeholders**.
 - **Language:** bilingual **EN / DE** (client-side toggle; both strings rendered into
   `data-en` / `data-de`, swapped by `js/core/i18n.js`).
 - **Content editing:** Git-based CMS (**Pages CMS**) editing `src/_data/*.json`.
-- **Hosting:** **Vercel** (auto-build on push). Type: **Lineal** variable font (SIL OFL).
+- **Hosting:** **Vercel** (auto-build on push), custom domain **en-ak.com** (DNS at IONOS —
+  see §9). Type: **Lineal** variable font (SIL OFL).
 
 ### Locked-in decisions
 | Choice | Value |
@@ -28,6 +29,7 @@ monochrome** aesthetic. Brand / copy / projects are **placeholders**.
 | Build | Eleventy → `_site/` |
 | CMS | Pages CMS (`.pages.yml`), GitHub-backed |
 | Host | Vercel (`buildCommand: npx @11ty/eleventy`, `outputDirectory: _site`) |
+| Domain | `en-ak.com` (production) + `www.en-ak.com` (redirects to it); DNS stays at IONOS registrar |
 | Brand | **EN/AK** (placeholder — edit in `src/_data/site.json`) |
 
 ---
@@ -160,6 +162,15 @@ in `EDITING.md` (CMS or direct-file workflow).
   resources (CDN/fonts/embeds) requires extending the CSP — see `EDITING.md` §CSP.
 - If you change the inline `<head>` script in `base.njk`, recompute its CSP hash:
   `printf "%s" "SCRIPT" | openssl dgst -sha256 -binary | openssl base64`.
+- **Custom domain:** `en-ak.com` (production) + `www.en-ak.com` (Vercel 308 redirect to it) are
+  live, both with valid Vercel-issued SSL. DNS stays at **IONOS** (not delegated to Vercel)
+  because the domain also runs iCloud Mail (MX/SPF/DKIM records) — only an `A` record (`@`)
+  and a `CNAME` (`www`) point at Vercel there. **Never touch the MX/TXT/DKIM records** when
+  editing DNS for this domain.
+- **IONOS gotcha:** IONOS' own "Domain-Weiterleitung" (forwarding) feature can silently
+  override manually-set A/CNAME records and has no delete button in its UI. If the domain
+  stops resolving to Vercel, check `Details → Verwendungsart` isn't set to "Weiterleitung" —
+  removing it may require IONOS live support chat.
 
 ---
 
