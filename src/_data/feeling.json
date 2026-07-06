@@ -1,27 +1,122 @@
 {
   "hero": {
-    "eyebrow": { "en": "Feeling", "de": "Gefühl" },
-    "title": { "en": "Beauty, Digital", "de": "Schönheit, Digital" },
-    "lead": { "en": "Beautiful is not enough. I craft my work to be fast, accessible and alive on every device — design and functionality in one.", "de": "Schön allein genügt nicht. Ich gestalte meine Arbeit schnell, zugänglich und lebendig auf jedem Gerät — Design und Funktionalität in einem." }
+    "eyebrow": {
+      "en": "Feeling",
+      "de": "Gefühl"
+    },
+    "title": {
+      "en": "Beauty, Digital",
+      "de": "Schönheit, Digital"
+    },
+    "lead": {
+      "en": "Beautiful is not enough. I craft my work to be fast, accessible and alive on every device — design and functionality in one.",
+      "de": "Schön allein genügt nicht. Ich gestalte meine Arbeit schnell, zugänglich und lebendig auf jedem Gerät — Design und Funktionalität in einem."
+    }
   },
   "stack": {
-    "eyebrow": { "en": "The Journey", "de": "Das Erlebniss" },
-    "title": { "en": "What makes it special.", "de": "Was es besonders macht." },
+    "eyebrow": {
+      "en": "The Journey",
+      "de": "Das Erlebniss"
+    },
+    "title": {
+      "en": "What makes it special.",
+      "de": "Was es besonders macht."
+    },
     "cards": [
-      { "title": { "en": "Design", "de": "Gestaltung" }, "text": { "en": "The design to see all of its beauty.", "de": "Die Gestaltung um die ganze Schönheit zu sehen." } },
-      { "title": { "en": "Font", "de": "Schriftart" }, "text": { "en": "Everything has is expression so the font.", "de": "Alles zeigt seine Stimmung so auch die Schriftart." } },
-      { "title": { "en": "Interaction", "de": "Interaktion" }, "text": { "en": "Every click every reaction from it. Make it feel special.", "de": "Jeder click jede reaktion darauf. Lass es besonders sein." } },
-      { "title": { "en": "Performance", "de": "Performance" }, "text": { "en": "Give life to everything. Let it run free.", "de": "Schenke allem ein Leben. Lass ihr freien Lauf." } },
-      { "title": { "en": "Accessibility", "de": "Barrierefreiheit" }, "text": { "en": "Reduced-motion, contrast baked in, not bolted on.", "de": "Reduced-Motion, Kontrast von Anfang an mitgedacht." } },
-      { "title": { "en": "Headless", "de": "Kopflos" }, "text": { "en": "Composable, headless front-ends that your team can own and extend.", "de": "Komponierbare, Kopflose Frontends, die Ihr Team selbst weiterführt." } }
+      {
+        "title": {
+          "en": "Design",
+          "de": "Gestaltung"
+        },
+        "text": {
+          "en": "The design to see all of its beauty.",
+          "de": "Die Gestaltung um die ganze Schönheit zu sehen."
+        }
+      },
+      {
+        "title": {
+          "en": "Font",
+          "de": "Schriftart"
+        },
+        "text": {
+          "en": "Everything has is expression so the font.",
+          "de": "Alles zeigt seine Stimmung so auch die Schriftart."
+        }
+      },
+      {
+        "title": {
+          "en": "Interaction",
+          "de": "Interaktion"
+        },
+        "text": {
+          "en": "Every click every reaction from it. Make it feel special.",
+          "de": "Jeder click jede reaktion darauf. Lass es besonders sein."
+        }
+      },
+      {
+        "title": {
+          "en": "Performance",
+          "de": "Performance"
+        },
+        "text": {
+          "en": "Give life to everything. Let it run free.",
+          "de": "Schenke allem ein Leben. Lass ihr freien Lauf."
+        }
+      },
+      {
+        "title": {
+          "en": "Accessibility",
+          "de": "Barrierefreiheit"
+        },
+        "text": {
+          "en": "Reduced-motion, contrast baked in, not bolted on.",
+          "de": "Reduced-Motion, Kontrast von Anfang an mitgedacht."
+        }
+      },
+      {
+        "title": {
+          "en": "Headless",
+          "de": "Kopflos"
+        },
+        "text": {
+          "en": "Composable, headless front-ends that your team can own and extend.",
+          "de": "Komponierbare, Kopflose Frontends, die Ihr Team selbst weiterführt."
+        }
+      }
     ]
   },
   "principles": {
-    "eyebrow": { "en": "Principles", "de": "Prinzipien" },
-    "title": { "en": "How we keep it alive.", "de": "Wie wir es lebendig halten." },
+    "eyebrow": {
+      "en": "Principles",
+      "de": "Prinzipien"
+    },
+    "title": {
+      "en": "How it feels alive.",
+      "de": "Wie es sich lebendig anfühlt."
+    },
     "steps": [
-      { "no": "01", "title": { "en": "Motion with meaning", "de": "Motion mit Bedeutung" }, "text": { "en": "Every animation earns its place — it guides, it never distracts.", "de": "Jede Animation hat einen Zweck — sie führt, statt abzulenken." } },
-      { "no": "02", "title": { "en": "Respect the user", "de": "Den Nutzer respektieren" }, "text": { "en": "We honour reduced-motion and slow networks. Delight is never a tax.", "de": "Wir achten Reduced-Motion und langsame Netze. Begeisterung kostet nichts extra." } }
+      {
+        "no": "01",
+        "title": {
+          "en": "Motion with meaning",
+          "de": "Motion mit Bedeutung"
+        },
+        "text": {
+          "en": "Every animation earns its place — it guides, it never distracts.",
+          "de": "Jede Animation hat einen Zweck — sie führt, statt abzulenken."
+        }
+      },
+      {
+        "no": "02",
+        "title": {
+          "en": "Respect the user",
+          "de": "Den Nutzer respektieren"
+        },
+        "text": {
+          "en": "We honour reduced-motion and slow networks. Delight is never a tax.",
+          "de": "Wir achten Reduced-Motion und langsame Netze. Begeisterung kostet nichts extra."
+        }
+      }
     ]
   }
 }
