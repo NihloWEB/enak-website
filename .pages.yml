@@ -303,8 +303,15 @@ content:
           - { name: tag, label: Tag, type: object, fields: *bi }
           - { name: meta, label: Meta, type: object, fields: *bi }
           - { name: description, label: Description, type: object, fields: *bil }
+          - name: download
+            label: "Download button"
+            type: object
+            fields:
+              - { name: enabled, label: "Show download button", type: boolean }
+              - { name: label, label: Button label, type: object, fields: *bi }
+              - { name: url, label: "Download URL (file or store link)", type: string }
           - name: gallery
-            label: Photo rails
+            label: Photos
             type: object
             list: true
             fields:

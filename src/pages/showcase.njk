@@ -59,14 +59,27 @@ description: Selected projects by EN/AK — web design, design and interfaces.
           <h2 class="project__title">{{ t.title }}</h2>
           <p class="project__meta" data-en="{{ t.meta.en }}" data-de="{{ t.meta.de }}">{{ t.meta.en }}</p>
           <p class="project__desc lead" data-en="{{ t.description.en }}" data-de="{{ t.description.de }}">{{ t.description.en }}</p>
-          {%- for rail in t.gallery %}
-          <div class="project__rail">
+          {%- if t.download and t.download.enabled %}
+          <a class="btn btn--solid project__download" href="{{ t.download.url }}" target="_blank" rel="noopener noreferrer" data-magnetic="0.3">
+            <span data-en="{{ t.download.label.en }}" data-de="{{ t.download.label.de }}">{{ t.download.label.en }}</span>
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          </a>
+          {%- endif %}
+          <div class="project__spread">
+            {%- for rail in t.gallery %}
             {%- for img in rail.images %}
-            <img src="{{ img }}" alt="" loading="lazy" />
+            <button type="button" class="spread-item" data-zoom-src="{{ img }}" data-en-aria="Enlarge photo" data-de-aria="Foto vergrößern" aria-label="Enlarge photo">
+              <img src="{{ img }}" alt="" loading="lazy" />
+            </button>
+            {%- endfor %}
             {%- endfor %}
           </div>
-          {%- endfor %}
         </article>
         {%- endfor %}
+      </div>
+
+      <!-- Photo zoom (click a photo in the spread) -->
+      <div class="lightbox__zoomview" data-zoomview aria-hidden="true">
+        <img src="" alt="" />
       </div>
     </div>

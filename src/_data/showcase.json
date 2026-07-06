@@ -54,6 +54,14 @@
         "en": "A learning & practice app for assessment-center prep — questions, scoring and progress tracking.",
         "de": "Eine Lern- & Übungs-App zur Assessment-Center-Vorbereitung — Fragen, Auswertung und Fortschritt."
       },
+      "download": {
+        "enabled": false,
+        "label": {
+          "en": "Download the app",
+          "de": "App herunterladen"
+        },
+        "url": ""
+      },
       "gallery": [
         {
           "images": [
@@ -87,6 +95,14 @@
       "description": {
         "en": "A playful app to learn reading sheet music — drills, feedback and steady progress.",
         "de": "Eine spielerische App zum Notenlesen-Lernen — Übungen, Feedback und stetiger Fortschritt."
+      },
+      "download": {
+        "enabled": false,
+        "label": {
+          "en": "Download the app",
+          "de": "App herunterladen"
+        },
+        "url": ""
       },
       "gallery": [
         {

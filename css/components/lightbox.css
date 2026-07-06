@@ -77,25 +77,132 @@
 .project__meta { color: var(--ink-3); font-size: var(--t-small); margin-top: 0.5em; }
 .project__desc { margin-top: var(--s-5); max-width: 60ch; }
 
-.project__rail {
-  display: flex;
-  gap: var(--s-3);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  margin-top: var(--s-5);
-  padding-bottom: var(--s-2);
-  -webkit-overflow-scrolling: touch;
+.project__download { margin-top: var(--s-5); }
+
+/* ---- Magic-book photo spread ----
+   All photos visible at once in a tilted 2-col grid; each floats
+   on its own slow rhythm. Odd last photo spans full width. */
+.project__spread {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(14px, 2.6vw, 24px);
+  margin-top: var(--s-6);
+  padding: var(--s-2) var(--s-1);
 }
-.project__rail img {
-  flex: 0 0 auto;
-  width: min(82%, 560px);
+.spread-item {
+  --tilt: 0deg;
+  --fan-x: 0%;
+  --fan-y: 0%;
+  --fan-rot: 0deg;
+  padding: 0;
+  border: 0;
+  background: none;
+  display: block;
+  border-radius: var(--r-md);
+  transform: rotate(var(--tilt));
+  box-shadow: 0 20px 48px -20px rgba(0, 0, 0, 0.75);
+  transition: transform var(--dur-2) var(--ease-spring), box-shadow var(--dur-2) var(--ease-out);
+  cursor: zoom-in;
+  animation: spread-fan 0.9s var(--ease-out) both;
+}
+.spread-item:hover,
+.spread-item:focus-visible {
+  transform: rotate(calc(var(--tilt) * 0.35)) translateY(-6px) scale(1.03);
+  box-shadow: 0 34px 70px -22px rgba(0, 0, 0, 0.85), 0 0 0 1px var(--glass-stroke);
+  z-index: 2;
+  position: relative;
+}
+.spread-item img {
+  display: block;
+  width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-radius: var(--r-md);
+  border-radius: inherit;
   border: 1px solid var(--line);
-  scroll-snap-align: center;
+  animation: spread-drift var(--drift-dur, 8s) var(--ease-in-out) var(--drift-delay, 0s) infinite;
 }
+/* Each photo tilts + drifts on its own rhythm, and fans out of a
+   center "closed book" stack on open (cascade, springy landing) */
+.spread-item:nth-child(4n + 1) { --tilt: -2.1deg; --drift-dur: 7.2s;  --drift-delay: 0s;    --fan-x: 54%;  --fan-y: 62%;  --fan-rot: -11deg; animation-delay: 0.35s; }
+.spread-item:nth-child(4n + 2) { --tilt: 1.7deg;  --drift-dur: 8.6s;  --drift-delay: -2.8s; --fan-x: -54%; --fan-y: 58%;  --fan-rot: 9deg;   animation-delay: 0.47s; }
+.spread-item:nth-child(4n + 3) { --tilt: 1.9deg;  --drift-dur: 7.9s;  --drift-delay: -1.5s; --fan-x: 54%;  --fan-y: -58%; --fan-rot: 10deg;  animation-delay: 0.59s; }
+.spread-item:nth-child(4n + 4) { --tilt: -1.4deg; --drift-dur: 9.3s;  --drift-delay: -4.2s; --fan-x: -54%; --fan-y: -62%; --fan-rot: -9deg;  animation-delay: 0.71s; }
+/* Odd photo count: last one becomes a wide cinematic strip — the finale */
+.spread-item:nth-child(odd):last-child { grid-column: 1 / -1; --fan-x: 0%; --fan-y: -55%; --fan-rot: 5deg; animation-delay: 0.85s; }
+.spread-item:nth-child(odd):last-child img { aspect-ratio: 21 / 9; }
+
+@keyframes spread-drift {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -5px; }
+}
+
+/* Fan-out: start stacked at the spread's center (scaled down, extra
+   spin), fly to the grid spot, overshoot a touch, settle on the tilt */
+@keyframes spread-fan {
+  0% {
+    opacity: 0;
+    transform: translate(var(--fan-x), var(--fan-y)) rotate(var(--fan-rot)) scale(0.72);
+  }
+  45% { opacity: 1; }
+  78% {
+    transform: translate(calc(var(--fan-x) * -0.055), calc(var(--fan-y) * -0.055))
+      rotate(calc(var(--tilt) * 1.9)) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(var(--tilt)) scale(1);
+  }
+}
+
+/* Text enters first: title → meta → description → button slide up
+   quickly, then the photo fan-out fires (delays above) */
+.project > *:not(.project__spread) { animation: panel-intro 0.5s var(--ease-out) both; }
+.project > *:nth-child(1) { animation-delay: 0s; }
+.project > *:nth-child(2) { animation-delay: 0.05s; }
+.project > *:nth-child(3) { animation-delay: 0.1s; }
+.project > *:nth-child(4) { animation-delay: 0.15s; }
+.project > *:nth-child(5):not(.project__spread) { animation-delay: 0.2s; }
+
+@keyframes panel-intro {
+  from { opacity: 0; translate: 0 14px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+
+/* ---- Photo zoom overlay ---- */
+.lightbox__zoomview {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 4vw, 48px);
+  background: rgba(5, 5, 7, 0.82);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur-2) var(--ease-out), visibility var(--dur-2);
+  cursor: zoom-out;
+}
+.lightbox__zoomview.is-open { opacity: 1; visibility: visible; }
+.lightbox__zoomview img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: var(--r-md);
+  border: 1px solid var(--glass-stroke);
+  box-shadow: var(--glass-shadow);
+  transform: scale(0.96);
+  transition: transform var(--dur-2) var(--ease-spring);
+}
+.lightbox__zoomview.is-open img { transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   .lightbox__scroll { transform: none; }
+  .spread-item { transform: none; animation: none; }
+  .spread-item:hover,
+  .spread-item:focus-visible { transform: none; }
+  .spread-item img { animation: none; }
+  .project > *:not(.project__spread) { animation: none; }
+  .lightbox__zoomview img { transform: none; transition: none; }
 }
