@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "eyebrow": { "en": "Legal", "de": "Rechtliches" },
+    "title": { "en": "Legal Notice", "de": "Impressum" }
+  },
+  "sections": [
+    {
+      "heading": "Impressum",
+      "lines": ["Nick Endriß", "Eichelbergweg 5", "76275 Ettlingen"]
+    },
+    {
+      "heading": "Kontakt",
+      "lines": ["Telefon: 01799333376", "E-Mail: info@en-ak.com"]
+    }
+  ],
+  "source": "e-recht24.de"
+}

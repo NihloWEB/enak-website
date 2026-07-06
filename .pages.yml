@@ -426,3 +426,25 @@ content:
             fields:
               - { name: label, label: Label, type: string }
               - { name: url, label: URL, type: string }
+
+  # ---------------------------------------------------------- IMPRESSUM
+  - name: impressum
+    label: "Page · Impressum"
+    type: file
+    path: src/_data/impressum.json
+    format: json
+    fields:
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: eyebrow, type: object, fields: *bi, label: Eyebrow }
+          - { name: title, type: object, fields: *bi, label: Title }
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        fields:
+          - { name: heading, label: Heading, type: string }
+          - { name: lines, label: Lines, type: string, list: true }
+      - { name: source, label: Source, type: string }

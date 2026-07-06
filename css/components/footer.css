@@ -42,6 +42,9 @@
 .footer__credit a { color: var(--ink-2); border-bottom: 1px solid var(--line); }
 .footer__credit a:hover { color: var(--ink); }
 
+.footer__legal { color: var(--ink-2); transition: color var(--dur-1) var(--ease-out); }
+.footer__legal:hover { color: var(--ink); }
+
 .to-top {
   display: inline-flex; align-items: center; gap: 0.5em;
   color: var(--ink-2); font-size: var(--t-small); font-weight: 600;
