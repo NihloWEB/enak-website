@@ -175,12 +175,12 @@
   },
   "showcase": {
     "eyebrow": {
-      "en": "Selected work",
-      "de": "Ausgewählte Arbeiten"
+      "en": "Teaser",
+      "de": "Vorschau"
     },
     "title": {
-      "en": "Old & new projects",
-      "de": "Alte & neue Projekte"
+      "en": "Want to see my Projects?",
+      "de": "Lust meine Projekte anzuschauen?"
     },
     "tiles": [
       {
