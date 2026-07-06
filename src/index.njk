@@ -91,25 +91,6 @@ permalink: /index.html
       </div>
     </section>
 
-    <!-- ============================== SHOWCASE ============================== -->
-    <section class="showcase" data-horizontal id="work">
-      <div class="showcase__pin">
-        <div class="showcase__head">
-          <div>
-            <span class="eyebrow" data-en="{{ home.showcase.eyebrow.en }}" data-de="{{ home.showcase.eyebrow.de }}">{{ home.showcase.eyebrow.en }}</span>
-            <h2 class="section-head__title" data-en="{{ home.showcase.title.en }}" data-de="{{ home.showcase.title.de }}">{{ home.showcase.title.en }}</h2>
-          </div>
-          <div class="showcase__progress deco" aria-hidden="true"><i></i></div>
-        </div>
-
-        <div class="showcase__track">
-          {%- for t in home.showcase.tiles %}
-          <a class="tile" href="/pages/showcase/" aria-label="{{ t.title }}"><div class="tile__media deco" style="--tile-angle:{{ t.angle }}deg">{% if t.thumb %}<img class="tile__thumb" src="{{ t.thumb }}" alt="{{ t.title }}" loading="lazy" />{% endif %}</div></a>
-          {%- endfor %}
-        </div>
-      </div>
-    </section>
-
     <!-- =============================== STATS =============================== -->
     <section class="section">
       <div class="container stats-grid" data-reveal-group="120">
