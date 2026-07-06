@@ -11,3 +11,6 @@ node_modules/
 # Eleventy build output (Vercel builds this; not committed)
 _site/
 .cache/
+
+# Local project artifacts/backups (not part of the deployed site)
+artifacts/
