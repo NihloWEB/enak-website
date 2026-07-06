@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: Impressum · EN/AK
+description: Impressum / legal notice for EN/AK.
+---
+
+    <section class="page-hero container">
+      <div class="page-hero__light deco"></div>
+      <span class="eyebrow page-hero__eyebrow" data-reveal="fade" data-en="{{ impressum.hero.eyebrow.en }}" data-de="{{ impressum.hero.eyebrow.de }}">{{ impressum.hero.eyebrow.en }}</span>
+      <h1 class="page-hero__title ink-shine" data-reveal data-en="{{ impressum.hero.title.en }}" data-de="{{ impressum.hero.title.de }}">{{ impressum.hero.title.en }}</h1>
+    </section>
+
+    <section class="section--tight">
+      <div class="container measure stack-lg" data-reveal-group="90">
+        {%- for s in impressum.sections %}
+        <div class="stack" data-reveal>
+          <h2 style="font-size: var(--t-h3)">{{ s.heading }}</h2>
+          {%- for line in s.lines %}
+          <p class="muted">{{ line }}</p>
+          {%- endfor %}
+        </div>
+        {%- endfor %}
+        <p class="muted" style="font-size: var(--t-small)" data-reveal>Quelle: {{ impressum.source }}</p>
+      </div>
+    </section>
